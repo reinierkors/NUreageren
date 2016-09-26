@@ -29,9 +29,6 @@ function httpGetAsync(theUrl)
 {
     var xmlHttp = new XMLHttpRequest();
     xmlHttp.onreadystatechange = function() {
-        console.log(xmlHttp.readyState);
-        console.log(xmlHttp.status);
-
         if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
             $('span#count').text(xmlHttp.responseText);
         }
