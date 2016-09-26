@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         NUreageren.nl
 // @namespace    https://nureageren.nl/
-// @version      1.1
+// @version      1.11
 // @updateURL    https://github.com/reinierkors/NUreageren/raw/master/NUreageren.nl.user.js
 // @description  Deze plugin zorgt ervoor dat jij weer kunt reageren op nu.nl.
 // @author       NUreageren.nl
