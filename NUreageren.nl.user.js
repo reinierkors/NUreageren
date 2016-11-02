@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         NUreageren.nl
 // @namespace    https://nureageren.nl/
-// @version      2.1
+// @version      2.11
 // @updateURL    https://github.com/reinierkors/NUreageren/raw/master/NUreageren.nl.user.js
 // @description  Deze plugin zorgt ervoor dat jij weer kunt reageren op nu.nl.
 // @author       NUreageren.nl
@@ -58,9 +58,9 @@
             }
 
             // Create and append this element's children
-            var childElems = Array.slice(arguments, 2);
+            var childElems = Array.prototype.slice.call(arguments, 2);
             childElems.forEach(function(childElem) {
-                if (childElem != null) {
+                if (childElem !== null) {
                     elem.appendChild(
                         childElem instanceof doc.defaultView.Node ? childElem :
                             Array.isArray(childElem) ? tag.apply(null, childElem) :
