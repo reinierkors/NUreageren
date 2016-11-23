@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         NUreageren.nl
 // @namespace    https://nureageren.nl/
-// @version      2.11
+// @version      2.2
 // @updateURL    https://github.com/reinierkors/NUreageren/raw/master/NUreageren.nl.user.js
 // @description  Deze plugin zorgt ervoor dat jij weer kunt reageren op nu.nl.
 // @author       NUreageren.nl
@@ -107,9 +107,7 @@
             ];
             newButton.appendChild(jsonToDOM(json, document, {}));
 
-            for (var i = 0; i < buttons.length; i++) {
-                buttons[i].insertBefore(newButton, buttons[i].firstChild);
-            }
+            buttons.item(buttons.length-1).insertBefore(newButton, buttons.item(buttons.length-1).firstChild);
 
             setCount("nureageren_count");
         }
